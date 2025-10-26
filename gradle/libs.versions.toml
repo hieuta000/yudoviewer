@@ -10,6 +10,8 @@ material = "1.13.0"
 kotlinx-coroutines = "1.10.2"
 youtube-downloader = "3.3.1"
 coil = "2.7.0"
+desugar = "2.1.5"
+slf4j = "1.7.36"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -22,6 +24,8 @@ kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-cor
 kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinx-coroutines" }
 youtube-downloader = { group = "com.github.sealedtx", name = "java-youtube-downloader", version.ref = "youtube-downloader" }
 coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+desugar-jdk-libs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugar" }
+slf4j-android = { group = "org.slf4j", name = "slf4j-android", version.ref = "slf4j" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

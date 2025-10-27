@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:ellipsize="end"
-        android:maxLines="2"
+        android.maxLines="2"
         android:textAppearance="?attr/textAppearanceListItem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/thumbnail_image_view"
@@ -41,5 +41,25 @@
         app:layout_constraintStart_toEndOf="@+id/thumbnail_image_view"
         app:layout_constraintTop_toBottomOf="@+id/title_text_view"
         tools:text="Video description goes here and can be multiple lines." />
+
+    <Button
+        android:id="@+id/download_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Download"
+        app:layout_constraintStart_toStartOf="@+id/description_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/description_text_view" />
+
+    <ProgressBar
+        android:id="@+id/download_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/download_button"
+        app:layout_constraintTop_toBottomOf="@+id/download_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
